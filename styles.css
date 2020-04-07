@@ -1,0 +1,327 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+
+.switch {
+  color: #FEF2BF;
+  font-size: 0.8rem;
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: grey;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+
+/* Ranking table formating */
+
+.col4 {
+  background-color: #011F3F;
+  font-size: 2.5rem;
+  padding: 0;
+  padding-bottom: 15px;
+  opacity: 0.9;
+  color: white;
+  text-align: center;
+}
+
+.firstrankrow {
+  display: default;
+}
+
+.secondrankrow {
+  display: none;
+}
+
+.thirdrankrow {
+  display: none;
+}
+
+.ranking-h3 {
+  color: #FEF2BF;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+}
+
+.ranking-h4 {
+  margin-top: 5%;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6rem;
+  margin-bottom: 6px;
+}
+
+.ranking-h5 {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.55rem;
+  margin-top: 0;
+}
+
+
+.container-ranking {
+	/* transform: translate(-50%, -50%); */
+  text-align: center;
+}
+
+table {
+
+  margin: auto;
+	/* box-shadow: 0 0 20px rgba(0,0,0,0.1); */
+}
+
+th,
+td {
+  opacity: 0.5;
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+thead {
+	th {
+		background-color: #55608f;
+	}
+}
+
+}
+
+/*  NAME: INPUT; */
+
+
+.box{
+	/* position:absolute; */
+	/* left:50%;
+	top:50%; */
+	/* transform: translate(-50%,-50%); */
+  /* background-color: rgba(0, 0, 0, 0.89); */
+	/* border-radius:3px;
+	padding:70px 100px; */
+}
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	/* position:absolute; */
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;
+    pointer-event:none;
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{
+  border:0;
+  border-bottom:3px solid #555;
+  background:transparent;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+
+
+
+.input-container input:focus{
+ border:none;
+ outline:none;
+ border-bottom:1px solid;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+}
+
+/* Ranking table formating */
+
+/* CHECKBOX: STYLING; */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+body {
+    font-family: 'Press Start 2P', cursive;
+  }
+
+.card .checkbox-container {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    text-align:center;
+  padding: 40px 0px;
+}
+
+.input-title {
+    clear: both;
+    padding: 22px 0px 0px 0px;
+    font-size: 12px;
+    color: rgba(255,255,255,.6);
+    font-weight: 300;
+}
+
+
+/* Styling Checkbox Starts */
+.checkbox-label {
+    display: block;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    clear: both;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 2px solid #FFFFFF;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity:1;
+    border: 2px solid #FFFFFF;
+}
+
+
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 5px;
+    border: solid #009BFF;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid #011F3F;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+
+/* For Ripple Effect */
+.checkbox-label .checkbox-custom::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::before {
+    left: -3px;
+    top: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity:0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}

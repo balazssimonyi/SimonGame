@@ -1,0 +1,105 @@
+<!-- ADD SWITCH BETWEEN NORMAL MODE AND MODE WHERE SEQUENCE IS ALWAYS SHOWN  -> DONE :)        -->
+<!-- CREATE A HIGHEST SCORE MENU FOR THE CURRENT SESSION                     -> DONE >.>  -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="C:\Users\User\Desktop\web dev course\tesfiles\test.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="C:\Users\User\Desktop\web dev course\tesfiles\test.css">
+
+</head>
+
+<body>
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="container">
+
+
+
+    <div lass="row">
+      <h3 class="ranking-h3">Current Session ranking</h3>
+      <!-- Ranking table -->
+      <div class="row">
+        <div class="container-ranking">
+          <table>
+            <thead>
+              <tr>
+                <th class="col1">Name</th>
+                <th class="col2">Point</th>
+                <th class="col3">Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr class="firstrankrow">
+                <td class="col1"> - </td>
+                <td class="col2"> - </td>
+                <td class="col3"> - </td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+
+
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="checkbox-container">
+        <label class="checkbox-label">
+          <input type="checkbox" id="mycheck" class="checkboxclass"/>
+          <span class="checkbox-custom rectangular"></span>
+        </label>
+        <div class="input-title checkboxinput">Enable shadow</div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+
+<footer>
+  <div class="row">
+    <h4 class="ranking-h4">Provide a name to enter ranking.</h4>
+    <h4 class="ranking-h5">(Press 'Enter' to add new / activate previous name)</h4>
+      <div class="box">
+        <form onsubmit="return false">
+          <div class="input-container">
+            <input type="text" class="nameinputclass"/>
+          </div>
+      </div>
+
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="index-3.js"></script>
+</html>
